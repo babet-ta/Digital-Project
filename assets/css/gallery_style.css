@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Cormorant+Upright:wght@300&family=Jost:wght@400;800&family=Lato:ital@1&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap');
+
+/* Блок с фото */
+.gallery-photos {
+    margin: 2% 12.5%;
+    width: 75%;
+    min-height: 50vh;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* Заголовок_светлый */
+.gallery__title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12.5%;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #BDBDBD;
+    font-size: 4em;
+}
+
+/* Заголовок_темный */
+.gallery__title_dark {
+    font-weight: 700;
+    color: #333333;
+}
+
+/* Полоса под заголовком центрирование */
+.gallery__line {
+    text-align: center;
+}
+
+/* Полоса под заголовком картинка */
+.gallery__line-img {
+    width: 75%;
+}
+
+/* Фотографии в галерее */
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Блок пагинации */
+.pagination {
+    margin: 0 12.5%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Позиционирование_блок пагинации */
+.pagination__item {
+    margin: 0 2% 0 0;
+}
