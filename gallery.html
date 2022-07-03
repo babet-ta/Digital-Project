@@ -71,17 +71,15 @@
             margin: 0 2% 0 0;
         }
 
-        div {
-            border: 1px solid black;
-        }
-
+        /* Футер */
         .footer {
-            min-height: 400px;
+            min-height: 300px;
             font-family: Roboto;
         }
 
+        /* Позиционирование_блок пагинации */
         .footer-rows {
-            padding-top: 1.5%;
+            padding-top: 2.5%;
         }
 
         .footer__logo {
@@ -90,6 +88,11 @@
 
         .footer-information__link {
             color: white;
+        }
+
+        .footer-bottom {
+            color: #C8C8C8;
+            font-family: Open Sans;
         }
     </style>
 </head>
@@ -128,14 +131,14 @@
             <!-- Grid row -->
             <div class="footer-rows row mt-3">
                 <!-- Grid column -->
-                <div class="footer__logo col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <div class="footer__logo col-md-3 col-lg-4 col-xl-3 mx-auto">
                     <!-- Content -->
                     <a href=""><img src="/assets/images/footer/logo_footer.png" alt="footer-logo"></a>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="footer__item col-md-2 col-lg-2 col-xl-2 mx-auto">
                     <!-- Links -->
                     <h6 class="fw-bold mb-4">
                         Information
@@ -159,8 +162,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
                     <h6 class="fw-bold mb-4">
                         Contacts
                     </h6>
@@ -199,8 +201,8 @@
             </div>
             <!-- Grid row -->
         </div>
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 All Rights Reserved
+        <div class="text-center p-4">
+            <p class="footer-bottom">© 2021 All Rights Reserved.</p>
         </div>
     </footer>
     <!-- Footer -->
