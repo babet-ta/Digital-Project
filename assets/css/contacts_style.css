@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Cormorant+Upright:wght@300&family=Jost:wght@400;800&family=Lato:ital@1&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap');
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+/* Главный контейнер страницы "Контакты" */
+.contacts {
+    display:grid;
+    grid-template-columns: 15% 2fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+/* Контейнер для всего текста */
+.contacts-textmain{
+    grid-column: 2;
+    grid-row:2;
+}
+/* Контейнер для заголовка h2 */
+.textmain-title
+{}
+/* Заголовок "Контакты"  */
+.title__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 8vh;
+    line-height: 64px;
+    color: #BDBDBD;
+    margin-bottom: 3%;
+}
+
+.info {
+    color: #333333;  
+    
+}
+
+/* Контейнер для адреса и координат */
+.contacts-text {
+
+    
+}
+
+/* Company Name  1234 Sample Street Austin Texas 76401 - контейнер */
+.text-address {
+    display: flex;
+    flex-direction: column;
+}
+/* Company Name */
+.address__title
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+/* 1234 Sample Street Austin Texas 76401 */
+.sample
+{
+    font-weight: lighter;  
+    margin-bottom: 4%;
+}
+
+/* 512.333.2222 */
+.text__coordinates {
+    font-weight:bold;
+    margin-bottom: 4%;
+    
+}
+
+/* sampleemail@gmail.com */
+.text__mail {
+    margin-bottom: 4%;
+}
+
+/* Contact US кнопка */
+.text__btn {
+min-width:200px;
+min-height: 80px;
+background: #333333;
+color: white;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+.text-form
+{
+    
+}
+
+/* Контейнер для карты */
+.contacts-map {
+    grid-column: 3;
+    grid-row: 2;
+
+}
+
+/* Картинка с картой */
+
+.map__card{
+    width:40vw; 
+    height:50vh;
+}
+
+.link span
+{
+opacity: 0;
+}
+
+.contacts-map{
+    display: flex;
+    justify-content: end;
+}

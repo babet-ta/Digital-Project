@@ -5,23 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/contacts_style.css" />
 </head>
 
 <body>
-    <header>
+    <main class="contacts">
+        <div class="contacts-textmain">
+            <div class="textmain-title">
+                <h2 class="title__item">Contact
+                    <span class="title__item info">Information</span></h2>
+            </div>
+            <div class="contacts-text">
+                <div class="text-address">
+                    <p class="address__title">Company Name</p>
+                    <p class="address__title sample ">1234 Sample Street Austin Texas 76401 </p>
+                </div>
+                <p class="text__coordinates">512.333.2222</p>
+                <p class="text__mail">sampleemail@gmail.com</p>
+                <form class=text-form><button class="text__btn">Contact US</button></form>
+            </div>
+        </div>
+        <div class="contacts-map">
+            <iframe class="map__card"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.841382541047!2d-97.75079788448016!3d30.27010031483124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b50c3ad151db%3A0xd141f5addf7f3f47!2zNjE1IFcgN3RoIFN0LCBBdXN0aW4sIFRYIDc4NzAxLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1656932389260!5m2!1sru!2sru"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    </header>
-    <main>
-
+        </div>
     </main>
-    <footer>
-
-    </footer>
-
-
 </body>
 
 </html>
