@@ -73,26 +73,30 @@
 
         /* Футер */
         .footer {
+            padding: 0 0 0 10%;
             min-height: 300px;
             font-family: Roboto;
         }
 
-        /* Позиционирование_блок пагинации */
+        /* Футер отступ сверху */
         .footer-rows {
-            padding-top: 2.5%;
+            padding-top: 1.5%;
         }
 
-        .footer__logo {
-            padding-left: 10%
-        }
-
+        /* Цвет ссылок в футере */
         .footer-information__link {
             color: white;
         }
 
+        /* Шрифт нижней части футера */
         .footer-bottom {
             color: #C8C8C8;
             font-family: Open Sans;
+        }
+
+        /*Отступ в адресе*/
+        .texas {
+            margin-left: 15%;
         }
     </style>
 </head>
@@ -127,79 +131,82 @@
     </main>
     <!-- Footer -->
     <footer class="footer text-center text-lg-start bg-dark text-light">
-        <div class="container-fluid text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="footer-rows row mt-3">
-                <!-- Grid column -->
-                <div class="footer__logo col-md-3 col-lg-4 col-xl-3 mx-auto">
-                    <!-- Content -->
-                    <a href=""><img src="/assets/images/footer/logo_footer.png" alt="footer-logo"></a>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="footer__item col-md-2 col-lg-2 col-xl-2 mx-auto">
-                    <!-- Links -->
-                    <h6 class="fw-bold mb-4">
-                        Information
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-decoration-none footer-information__link">Main</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-decoration-none footer-information__link">Gallery</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-decoration-none footer-information__link">Projects</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-decoration-none footer-information__link">Certifications</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-decoration-none footer-information__link">Contacts</a>
-                    </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
-                    <h6 class="fw-bold mb-4">
-                        Contacts
-                    </h6>
-                    <p><i class="fa-regular fa-location-dot"></i> 1234 Sample Street
-                        Austin Texas 78681</p>
-                    <p><i class="fas fa-phone me-3"></i> 512.333.2222</p>
-                    <p>
-                        <i class="fas fa-envelope me-3"></i>
-                        sampleemail@gmail.com
-                    </p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <div>
+        <div class="d-flex justify-content-around">
+            <div class="container-fluid text-center text-md-start mt-5 m-auto">
+                <!-- Grid row -->
+                <div class="footer-rows row mt-5">
+                    <!-- Grid column -->
+                    <div class="d-flex justify-content-center col-md-3 col-lg-2 col-xl-2  mb-4 ">
+                        <!-- Content logo -->
+                        <a href=""><img src="/assets/images/footer/logo_footer.png" alt="footer-logo"></a>
+                    </div>​
+                    <!-- Grid column -->
+                    <div class=" col-md-1 col-lg-1 col-xl-2 mx-auto mb-4  ">
+                        <!-- Links -->
                         <h6 class="fw-bold mb-4">
+                            Information
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-decoration-none footer-information__link">Main</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none footer-information__link">Gallery</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none footer-information__link">Projects</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none footer-information__link">Certifications</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-decoration-none footer-information__link">Contacts</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->​
+                    <!-- Grid column -->
+                    <div
+                        class="  col-md-2 col-lg-2 col-xl-2  mb-4 d-flex flex-column align-items-between justify-content-between ">
+                        <!-- Links -->
+                        <div>
+                            <h6 class="fw-bold mb-4">
+                                Contacts
+                            </h6>
+                            <i class="fa-regular fa-location-dot "></i> <span class="m-3">1234 Sample Street</span>
+                            <p class="texas ">Austin Texas 78681</p>
+                        </div>
+                        <div>
+                            <p><i class="fas fa-phone me-3 mb-4 "></i> 512.333.2222</p>
+                            <p>
+                                <i class=" fas fa-envelope me-3 "></i>
+                                sampleemail@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Grid column -->​
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4  ">
+                        <!-- Links -->
+                        <h6 class="fw-bold mb-4 ">
                             Social Media
                         </h6>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="" class="me-4 text-reset">
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </a>
+                        <div class="d-flex justify-content-between ">
+                            <a href="" class="me-4 text-reset social">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset social">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset social">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset social">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- Grid column -->
             </div>
-            <!-- Grid row -->
         </div>
         <div class="text-center p-4">
             <p class="footer-bottom">© 2021 All Rights Reserved.</p>
