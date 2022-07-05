@@ -3,7 +3,6 @@
 body {
     font-family: 'Roboto';
     font-style: normal;
-
 }
 
 /* Главный контейнер страницы "Контакты" */
@@ -11,9 +10,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
-
-
-
 }
 
 /* Контейнер для всего текста */
@@ -23,8 +19,6 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 2%;
-
-
 }
 
 .textmain__title {
@@ -33,8 +27,6 @@ body {
     font-weight: 300;
     color: #BDBDBD;
     font-size: 3.5em;
-
-
 }
 
 .info {
@@ -47,11 +39,13 @@ body {
 }
 
 .contact {
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 /* 1234 Sample Street Austin Texas 76401 */
 .sample {
+    font-size: 1.1em;
     margin-top: 0%;
     margin-bottom: 4%;
 }
@@ -60,10 +54,12 @@ body {
 .textmain__coordinates {
     font-weight: bold;
     margin-bottom: 4%;
+    font-size: 1.1em;
 }
 
 /* sampleemail@gmail.com */
 .textmain__mail {
+    font-size: 1.1em;
     margin-bottom: 8%;
 }
 
@@ -95,44 +91,61 @@ body {
 }
 
 
-@media screen and (min-width:768px) and(max-width:1023px) {
+@media screen and (max-width:1023px) {
     .contacts {
-
-
-
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
-    .contacts-textmain {}
+    .textmain__title {
+        font-size: 2em;
+    }
 
-    .textmain-title {}
-
-    .title__item {}
-
-    .info {}
-
-    .contacts-text {}
-
-    .text-address {}
-
-    .address__title {}
-
-    .sample {}
-
-    .text__coordinates {}
-
-    .text__mail {}
-
-    .text-form {}
-
-    .text__btn {}
-
-    .contacts-map {}
-
-    .map__card {}
+    .text__btn {
+        margin-bottom: 10%;
+    }
 
 }
 
-@media screen and (max-width:767px) {}
+.map__card {
+    margin: auto;
+    height: 30vh;
+    width: 50vh;
+}
+
+/* 1234 Sample Street Austin Texas 76401 */
+.sample {
+    font-size: 0, 7em;
+    margin-bottom: 1%;
+
+}
+
+/* 512.333.2222 */
+.textmain__coordinates {
+    margin-bottom: 2%;
+    font-size: 0, 7em;
+}
+
+/* sampleemail@gmail.com */
+.textmain__mail {
+    font-size: 0, 7em;
+    margin-bottom: 1%;
 
 
-@media screen and (min-width:1024px) {}
+}
+
+.text__btn {
+    min-width: 150px;
+    height: 60px;
+    font-size: 0, 4em;
+
+}
+
+@media screen and (min-width:1024px) {
+    .map__card {
+        width: 45vw;
+        height: 46vh;
+    }
+
+}
