@@ -33,7 +33,7 @@
             font-family: "Roboto";
             font-weight: 300;
             color: #BDBDBD;
-            font-size: 4em;
+            /* font-size: 4em; */
         }
 
         /* Заголовок_темный */
@@ -81,15 +81,24 @@
         } */
 
         @media screen and (min-width: 1024px) {
+
             /* .gallery {
                 max-width: 1440px;
             } */
+            .gallery__title {
+                font-size: 4em;
+            }
+
         }
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             /* .gallery {
                 max-width: 950px;
             } */
+
+            .gallery__title {
+                font-size: 3em;
+            }
 
             .gallery-photos {
                 padding-bottom: 5%;
@@ -103,6 +112,42 @@
         }
 
         @media screen and (max-width: 767px) {
+            /* 
+            div {
+                border: 1px solid black;
+            } */
+
+            .gallery__title {
+                font-size: 2em;
+            }
+
+            .gallery-photos {
+                padding-bottom: 5%;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                grid-gap: 1%;
+            }
+
+            .gallery__img_767 {
+                display: none;
+            }
+
+            .pagination {
+                padding-top: 6%;
+            }
+
+            .footer {
+                font-size: 0.7em;
+            }
+
+            h6 {
+                font-size: 1.2em;
+            }
+
+            .footer-bottom {
+                font-size: 0.7em;
+            }
+
             /* .gallery {
                 max-width: none;
             } */
@@ -158,13 +203,18 @@
                 <div><img src="/assets/images/gallery/gallery_img_2.png" alt="img_2" class="gallery__img"></div>
                 <div><img src="/assets/images/gallery/gallery_img_3.png" alt="img_3" class="gallery__img"></div>
                 <div><img src="/assets/images/gallery/gallery_img_4.png" alt="img_4" class="gallery__img"></div>
-                <div><img src="/assets/images/gallery/gallery_img_5.png" alt="img_5" class="gallery__img"></div>
-                <div><img src="/assets/images/gallery/gallery_img_6.png" alt="img_6" class="gallery__img"></div>
-                <div><img src="/assets/images/gallery/gallery_img_7.png" alt="img_7" class="gallery__img"></div>
-                <div><img src="/assets/images/gallery/gallery_img_8.png" alt="img_8" class="gallery__img"></div>
-                <div><img src="/assets/images/gallery/gallery_img_9.png" alt="img_9" class="gallery__img"></div>
+                <div><img src="/assets/images/gallery/gallery_img_5.png" alt="img_5"
+                        class="gallery__img gallery__img_767"></div>
+                <div><img src="/assets/images/gallery/gallery_img_6.png" alt="img_6"
+                        class="gallery__img gallery__img_767"></div>
+                <div><img src="/assets/images/gallery/gallery_img_7.png" alt="img_7"
+                        class="gallery__img gallery__img_767"></div>
+                <div><img src="/assets/images/gallery/gallery_img_8.png" alt="img_8"
+                        class="gallery__img gallery__img_767"></div>
+                <div><img src="/assets/images/gallery/gallery_img_9.png" alt="img_9"
+                        class="gallery__img gallery__img_767"></div>
                 <div><img src="/assets/images/gallery/gallery_img_10.png" alt="img_10"
-                        class="gallery__img gallery__img_1023"></div>
+                        class="gallery__img gallery__img_1023 gallery__img_767"></div>
             </div>
             <div class="pagination">
                 <div class="pagination__item"><img src="/assets/images/gallery/slide-numbers.png" alt="slide-numbers"
@@ -237,7 +287,7 @@
                         <h6 class="fw-bold mb-4 ">
                             Social Media
                         </h6>
-                        <div class="d-flex justify-content-between ">
+                        <div class="flex justify-content-around ">
                             <a href="" class="me-4 text-reset social">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
