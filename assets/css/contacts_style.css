@@ -16,22 +16,29 @@ body {
 .contacts-textmain{
     grid-column: 2;
     grid-row:2;
+    align-items: start;
 }
 /* Контейнер для заголовка h2 */
 .textmain-title
-{}
+{    display: flex;
+    flex-direction: column;
+    font-size: 3em;}
 /* Заголовок "Контакты"  */
 .title__item {
     display: flex;
-    flex-direction: column;
-    font-size: 8vh;
+    flex-direction: column;  
     line-height: 64px;
     color: #BDBDBD;
     margin-bottom: 3%;
+    margin-top: 3%;
+    
 }
 
 .info {
-    color: #333333;  
+    color: #333333; 
+    margin-top: 1%; 
+    margin-bottom: 5%; 
+    
     
 }
 
@@ -78,7 +85,7 @@ body {
 /* Contact US кнопка */
 .text__btn {
 min-width:200px;
-min-height: 80px;
+height: 69px;
 background: #333333;
 color: white;
 text-transform: uppercase;
@@ -94,22 +101,59 @@ cursor: pointer;
 .contacts-map {
     grid-column: 3;
     grid-row: 2;
+    display: flex;
+    justify-content: end;
 
 }
 
 /* Картинка с картой */
 
 .map__card{
-    width:40vw; 
-    height:50vh;
+    width:45vw; 
+    height:46vh;
 }
 
-.link span
-{
-opacity: 0;
+
+
+@media screen and (min-width:768px) and(max-width:1023px) {
+    .contacts {
+        
+
+    }
+    .contacts-textmain {
+    }
+    .textmain-title {
+        
+    }
+    .title__item { 
+        
+    }
+    .info { 
+    }
+    .contacts-text {
+    }
+    .text-address {
+    }
+    .address__title {
+    }
+    .sample {
+    }
+    .text__coordinates {
+    }
+    .text__mail {
+    }
+    .text-form {
+    }
+    .text__btn {
+    }
+    .contacts-map {
+    }
+    .map__card {
+    }
+
 }
 
-.contacts-map{
-    display: flex;
-    justify-content: end;
-}
+@media screen and (max-width:767px) {}
+
+
+@media screen and (min-width:1024px) {}
