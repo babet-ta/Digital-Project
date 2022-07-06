@@ -66,7 +66,7 @@ body {
 .textmain-form {}
 
 /* Contact US кнопка */
-.text__btn {
+.textmain__btn {
     min-width: 190px;
     height: 70px;
     background: #333333;
@@ -102,7 +102,7 @@ body {
         font-size: 2em;
     }
 
-    .text__btn {
+    .textmain__btn {
         margin-bottom: 10%;
     }
 
@@ -135,7 +135,7 @@ body {
 
 }
 
-.text__btn {
+.textmain__btn {
     min-width: 150px;
     height: 60px;
     font-size: 0, 4em;
