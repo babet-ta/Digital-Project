@@ -1,6 +1,21 @@
 /* Шрифт Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Cormorant+Upright:wght@300&family=Jost:wght@400;800&family=Lato:ital@1&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap'); 
 
+/* Для заголовков */
+.item__title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 14%;
+    font-weight: 300;
+    color: #BDBDBD;
+    font-size: 4em;
+}
+
+.item__title_dark {
+    font-weight: 700;
+    color: #333333;
+}
+
 /* Счетчик слайдов/страниц */
 .counter {
     position: relative;
