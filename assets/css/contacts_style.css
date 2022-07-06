@@ -74,6 +74,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 0.9em;
+    margin-top: 3%;
 }
 
 /* Контейнер для карты */
@@ -88,6 +89,7 @@ body {
 .map__card {
     width: 45vw;
     height: 46vh;
+    border:0;
 }
 
 
@@ -104,6 +106,7 @@ body {
 
     .textmain__btn {
         margin-bottom: 10%;
+        margin-top: 3%;
     }
 
 }
