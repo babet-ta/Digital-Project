@@ -24,17 +24,32 @@
         }
 
         /* Заголовок_светлый */
-        .gallery__title {
+        /* .gallery__title {
             display: flex;
             flex-direction: column;
             margin-left: 12.5%;
             font-family: "Roboto";
             font-weight: 300;
             color: #BDBDBD;
-        }
+        } */
 
         /* Заголовок_темный */
-        .gallery__title_dark {
+        /* .gallery__title_dark {
+            font-weight: 700;
+            color: #333333;
+        } */
+
+        /* Для заголовков */
+        .item__title {
+            display: flex;
+            flex-direction: column;
+            margin-left: 14%;
+            font-weight: 300;
+            color: #BDBDBD;
+            font-size: 4em;
+        }
+
+        .item__title_dark {
             font-weight: 700;
             color: #333333;
         }
@@ -116,7 +131,7 @@
 
         @media screen and (min-width: 1024px) {
 
-            .gallery__title {
+            .item__title {
                 font-size: 4em;
             }
 
@@ -128,7 +143,7 @@
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-            .gallery__title {
+            .item__title {
                 font-size: 3em;
             }
 
@@ -162,7 +177,7 @@
 
         @media screen and (max-width: 767px) {
 
-            .gallery__title {
+            .item__title {
                 font-size: 2em;
             }
 
@@ -239,7 +254,7 @@
     </header>
     <main>
         <div class="gallery">
-            <h1 class="gallery__title">Photo <span class="gallery__title_dark">Gallery</span></h1>
+            <h1 class="item__title">Photo <span class="item__title_dark">Gallery</span></h1>
             <div class="gallery__line"><img src="/assets/images/gallery/gallery_line.png" alt="gallery_line"
                     class="gallery__line-img"> </div>
             <div class="gallery-photos">
