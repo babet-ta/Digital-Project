@@ -1,0 +1,30 @@
+/* Шрифт Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Cormorant+Upright:wght@300&family=Jost:wght@400;800&family=Lato:ital@1&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap'); 
+
+/* Счетчик слайдов/страниц */
+.counter {
+    position: relative;
+}
+.counter span {
+    color: #BDBDBD;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+}
+.counter .counter__01 {
+    position: absolute;
+    width: 0;
+    word-break: break-all;
+    top: 15px;
+}
+.counter span.counter__slash {
+    position: absolute;
+    font-size: 50px;
+    left: 50px;
+    transform: rotate(20deg);
+}
+.counter .counter__02 {
+    position: absolute;
+    left: 100px;
+    top: 15px;
+}
