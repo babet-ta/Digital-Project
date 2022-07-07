@@ -21,7 +21,7 @@ body
 }
 
 /* Заголовок */
-.project_example__item {
+.title {
     display: flex;
     flex-direction: column;
     margin-left: 14%;
@@ -31,7 +31,7 @@ body
 }
 
 /* Project1 */
-.project {
+.title_dark {
     font-weight: 700;
     color: #333333;
 }
