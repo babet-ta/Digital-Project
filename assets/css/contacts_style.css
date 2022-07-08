@@ -21,7 +21,7 @@ body {
     margin-left: 2%;
 }
 
-.textmain__title {
+.title_gray {
     display: flex;
     flex-direction: column;
     font-weight: 300;
@@ -29,44 +29,44 @@ body {
     font-size: 3.5em;
 }
 
-.info {
+.title_dark {
     font-weight: 700;
     color: #333333;
 }
 
-.textmain__item {
+.contacts-textmain__title{
     margin-bottom: 0%;
 }
 
-.contact {
+.contacts-textmain__contact{
     font-size: 1.2em;
     font-weight: bold;
 }
 
 /* 1234 Sample Street Austin Texas 76401 */
-.sample {
+.contacts-textmain__sample {
     font-size: 1.1em;
     margin-top: 0%;
     margin-bottom: 4%;
 }
 
 /* 512.333.2222 */
-.textmain__coordinates {
+.contacts-textmain__coordinates {
     font-weight: bold;
     margin-bottom: 4%;
     font-size: 1.1em;
 }
 
 /* sampleemail@gmail.com */
-.textmain__mail {
+.contacts-textmain__mail {
     font-size: 1.1em;
     margin-bottom: 8%;
 }
 
-.textmain-form {}
+
 
 /* Contact US кнопка */
-.textmain__btn {
+.contacts-textmain__btn {
     min-width: 190px;
     height: 70px;
     background: #333333;
@@ -78,7 +78,7 @@ body {
 }
 
 /* Контейнер для карты */
-.contacts-map {
+.contacts-item {
     grid-column: 3;
     grid-row: 2;
     display: flex;
@@ -86,7 +86,7 @@ body {
 }
 
 /* Карта*/
-.map__card {
+.item__map {
     width: 45vw;
     height: 46vh;
     border:0;
@@ -100,53 +100,52 @@ body {
         text-align: center;
     }
 
-    .textmain__title {
-        font-size: 2em;
-    }
 
-    .textmain__btn {
+    .contacts-textmain__btn {
         margin-bottom: 10%;
         margin-top: 3%;
     }
 
 }
 
-.map__card {
+.item__map {
     margin: auto;
     height: 30vh;
     width: 50vh;
 }
 
 /* 1234 Sample Street Austin Texas 76401 */
-.sample {
+.contacts-textmain__sample {
     font-size: 0, 7em;
     margin-bottom: 1%;
 
 }
 
 /* 512.333.2222 */
-.textmain__coordinates {
+.contacts-textmain__coordinates {
     margin-bottom: 2%;
     font-size: 0, 7em;
 }
 
 /* sampleemail@gmail.com */
-.textmain__mail {
+.contacts-textmain__mail {
     font-size: 0, 7em;
     margin-bottom: 1%;
 
 
 }
 
-.textmain__btn {
+.contacts-textmain__btn {
     min-width: 150px;
     height: 60px;
     font-size: 0, 4em;
 
 }
 
+
+
 @media screen and (min-width:1024px) {
-    .map__card {
+    .item__map {
         width: 45vw;
         height: 46vh;
     }
