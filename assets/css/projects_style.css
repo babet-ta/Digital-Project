@@ -114,11 +114,14 @@ body {
     }
 }
 
-.pagination {
+/* Счетчик слайдов/страниц */
+
+.pagination-section {
+    margin: 0 12.5%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 300px;
 }
 
 .pagination__items a{
@@ -150,9 +153,40 @@ body {
     color: #222;
 }
 
-.slider-img {
-    max-width: 200px;
+.counter {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: auto;
-    padding: 0;
+    max-width: 140px;
+    position: relative;
+}
+
+.counter__01 {
+    position: absolute;
+    word-break: break-all;
+    width: 0;
+    top: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #333333;
+}
+
+.counter__slash {
+    position: absolute;
+    left: 50px;
+    font-size: 50px;
+    left: 50px;
+    transform: rotate(20deg);
+    color: #BDBDBD;
+}
+
+.counter__05 {
+    position: absolute;
+    left: 100px;
+    top: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #BDBDBD;
 }
