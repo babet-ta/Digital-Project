@@ -8,27 +8,322 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/contacts_style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <main class="contacts">
-        <div class="contacts-textmain ">
-            <h2 class="contacts-textmain__title title_gray ">Contact
-                <span class="contacts-textmain__title title_dark">Information</span></h2>
-            <p class="contacts-textmain__contact">Company Name</p>
-            <p class="contacts-textmain__sample ">1234 Sample Street Austin Texas 76401 </p>
-            <p class="contacts-textmain__coordinates">512.333.2222</p>
-            <p class="contacts-textmain__mail">sampleemail@gmail.com</p>
-            <form class="contacts-textmain__form"><button class="contacts-textmain__btn">Contact US</button></form>
-        </div>
-        <div class="contacts-item">
-            <iframe class="item__map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.841382541047!2d-97.75079788448016!3d30.27010031483124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b50c3ad151db%3A0xd141f5addf7f3f47!2zNjE1IFcgN3RoIFN0LCBBdXN0aW4sIFRYIDc4NzAxLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1656932389260!5m2!1sru!2sru"
-                 allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        </div>
-    </main>
-</body>
+    
+    <style>
+           
+/* Форма */
+    label.required:after {
+        color: red;
+        content: " *";
+    }
+
+    .input_bgr {
+        background-color: #F3F3F3;
+    }
+
+    /* <!-- НАВИГАЦИЯ --> */
+        .header__logo {
+            height: 8vh;
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: -20px;
+        }
+
+        .header {
+            margin-top: 2%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 10% 2fr 3fr;
+        }
+
+        .header-nav {
+            align-items: center;
+            grid-column: 7/11;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .nav__item {
+
+            margin-right: 10%;
+            text-decoration: none;
+            color: black;
+            font-size: 0.9em;
+
+
+        }
+
+        .nav__item:hover {
+
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .nav__item:active {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        @media screen and (max-width:1023px) {
+            .header {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            .header__logo {
+                height: 6vh;
+            }
+
+            .header-nav {
+                grid-column: 4;
+            }
+
+            .nav__item {
+                font-size: 0.8em;
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .header {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+            }
+
+            .header__logo {
+
+                justify-self: center;
+                grid-column: 1;
+                width: 7vw;
+                height: 7vh;
+            }
+
+            .header-nav {
+                grid-column: 2;
+            }
+
+            .nav__item {
+                margin-right: 4%;
+                font-size: 0.6em;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <img class="header__logo" src="assets/images/logo/logo-nav.svg" alt="Логотип">
+                <nav class="header-nav">
+                    <a href="index.html" class="nav__item">MAIN</a>
+                    <a href="gallery.html" class="nav__item">GALLERY</a>
+                    <a href="projects.html" class="nav__item">PROJECTS</a>
+                    <a href="certifications.html" class="nav__item">CERTIFICATIONS</a>
+                    <a href="contacts.html" class="nav__item">CONTACTS</a>
+                </nav>
+
+
+            </div>
+            </nav>
+            <!-- НАВИГАЦИЯ -->
+            <main class="contacts">
+                <div class="contacts-text ">
+                    <h2 class="contacts-text__title title_gray ">Contact
+                        <span class="contacts-text__title title_dark">Information</span></h2>
+                    <p class="contacts-text__contact">Company Name</p>
+                    <p class="contacts-text__sample ">1234 Sample Street Austin Texas 76401 </p>
+                    <p class="contacts-text__coordinates">512.333.2222</p>
+                    <p class="contacts-text__mail">sampleemail@gmail.com</p>
+                    <form class="contacts-textmain__form">
+                        <button type="button" class="contacts-text__btn" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            CONTACT US
+                        </button>
+                        </div>
+                </div>
+                <div class="contacts-item">
+                    <iframe class="item__map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.841382541047!2d-97.75079788448016!3d30.27010031483124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b50c3ad151db%3A0xd141f5addf7f3f47!2zNjE1IFcgN3RoIFN0LCBBdXN0aW4sIFRYIDc4NzAxLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1656932389260!5m2!1sru!2sru"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Модальное окно -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="border-radius: 0">
+                    <!-- <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div> -->
+                    <div class="modal-body">
+                        <!-- <section class="vh-100" style="background-color: #8d9095;"> -->
+                        <div class="container py-5 h-100">
+                            <div class="row d-flex justify-content-center align-items-center h-100">
+                                <!-- <div class="col-12 col-md-12 col-lg-12 col-xl-12"> -->
+                                <!-- <div class="card shadow-2-strong" style="border-radius: 0"> -->
+                                <div class="card-body p-5 text-start">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <form>
+                                                    <div class="d-flex justify-content-between">
+                                                        <h1 class="text-center h1_font-weight ms-5">Задать
+                                                            вопрос</h1>
+                                                        <div class="col-md text-end align-items-end">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control rounded-0 input_bgr"
+                                                            placeholder="Имя">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="control-label required" for="username">Номер
+                                                            телефона</label>
+                                                        <input type="tel" name="username" required="required"
+                                                            class="form-control rounded-0 input_bgr"
+                                                            placeholder="Номер телефона">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="control-label required"
+                                                            for="username">E-mail</label>
+                                                        <input type="email" name="username" required="required"
+                                                            class="form-control rounded-0 input_bgr"
+                                                            placeholder="E-mail">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control rounded-0 input_bgr"
+                                                            placeholder="Интересующий товар/услуга">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="control-label required"
+                                                            for="username">Сообщение</label>
+                                                        <textarea class="form-control rounded-0 input_bgr"
+                                                            name="username" required="required"
+                                                            id="exampleFormControlTextarea1" rows="3"
+                                                            placeholder="Сообщение"  ></textarea>
+                                                    </div>
+                                                    <div class="mb-3 form-check">
+                                                        <input type="checkbox" class="form-check-input input_bgr">
+                                                        <label class="form-check-label"
+                                                            for="exampleCheck1">Отправляя
+                                                            заявку, Вы
+                                                            соглашаетесь
+                                                            с политикой
+                                                            конфиденциальности</label>
+                                                    </div>
+                                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                                        <button type="submit"
+                                                            class="btn btn-primary  btn-dark btn-lg rounded-0">Отправить</button>
+                                                    </div>
+                                                </form>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer text-center text-lg-start bg-dark text-light ">
+                <div class="d-flex justify-content-around">
+                    <div class="container text-center text-md-start mt-5 m-auto">
+                        <!-- Grid row -->
+                        <div class="footer-rows row mt-5">
+                            <!-- Grid column -->
+                            <div class="d-flex justify-content-center col-md-4 col-lg-3 col-xl-3 mb-4">
+                                <!-- Content logo -->
+                                <a href=""><img src="/assets/images/logo/logo_footer.png" alt="footer-logo"></a>
+                            </div>​
+                            <!-- Grid column -->
+                            <div class=" col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="fw-bold mb-4">
+                                    Information
+                                </h6>
+                                <p>
+                                    <a href="#!" class="text-decoration-none footer-information__link">Main</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-decoration-none footer-information__link">Gallery</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-decoration-none footer-information__link">Projects</a>
+                                </p>
+                                <p>
+                                    <a href="#!"
+                                        class="text-decoration-none footer-information__link">Certifications</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-decoration-none footer-information__link">Contacts</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->​
+                            <!-- Grid column -->
+                            <div
+                                class="col-md-4 col-lg-4 col-xl-3 mb-4 d-flex flex-column align-items-between justify-content-between ">
+                                <!-- Links -->
+                                <div>
+                                    <h6 class="fw-bold mb-4">
+                                        Contacts
+                                    </h6>
+                                    <i class="fa-regular fa-location-dot "></i> <span class="m-3">1234 Sample
+                                        Street</span>
+                                    <p class="texas ">Austin Texas 78681</p>
+                                </div>
+                                <div>
+                                    <p><i class="fas fa-phone me-3 mb-4 "></i> 512.333.2222</p>
+                                    <p>
+                                        <i class=" fas fa-envelope me-3 "></i>
+                                        sampleemail@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Grid column -->​
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <!-- Links -->
+                                <h6 class="fw-bold mb-4">
+                                    Social Media
+                                </h6>
+                                <div class="flex justify-content-around ">
+                                    <a href="" class="me-4 text-reset social">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="me-4 text-reset social">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="me-4 text-reset social">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="" class="me-4 text-reset social">
+                                        <i class="fa-brands fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                </div>
+                <div class="text-center p-4">
+                    <p class="footer-bottom">© 2021 All Rights Reserved.</p>
+                </div>
+            </footer>
+            <!-- Footer -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+                integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+                integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://kit.fontawesome.com/c586669fdd.js" crossorigin="anonymous"></script>
+    </body>
 
 </html>
