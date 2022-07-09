@@ -13,8 +13,21 @@
 </head>
 
 <body>
-    <!-- НАВИГАЦИЯ -->
+
+    
     <style>
+           
+/* Форма */
+    label.required:after {
+        color: red;
+        content: " *";
+    }
+
+    .input_bgr {
+        background-color: #F3F3F3;
+    }
+
+    /* <!-- НАВИГАЦИЯ --> */
         .header__logo {
             height: 8vh;
             grid-column: 2;
@@ -127,13 +140,89 @@
                     <p class="contacts-text__sample ">1234 Sample Street Austin Texas 76401 </p>
                     <p class="contacts-text__coordinates">512.333.2222</p>
                     <p class="contacts-text__mail">sampleemail@gmail.com</p>
-                    <form class="contacts-text__form"><button class="contacts-text__btn">Contact US</button></form>
+                    <form class="contacts-textmain__form">
+                        <button type="button" class="contacts-text__btn" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            CONTACT US
+                        </button>
+                        </div>
                 </div>
                 <div class="contacts-item">
                     <iframe class="item__map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.841382541047!2d-97.75079788448016!3d30.27010031483124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b50c3ad151db%3A0xd141f5addf7f3f47!2zNjE1IFcgN3RoIFN0LCBBdXN0aW4sIFRYIDc4NzAxLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1656932389260!5m2!1sru!2sru"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                <!-- Модальное окно -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="border-radius: 0">
+                    <!-- <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div> -->
+                    <div class="modal-body">
+                        <!-- <section class="vh-100" style="background-color: #8d9095;"> -->
+                        <div class="container py-5 h-100">
+                            <div class="row d-flex justify-content-center align-items-center h-100">
+                                <!-- <div class="col-12 col-md-12 col-lg-12 col-xl-12"> -->
+                                <!-- <div class="card shadow-2-strong" style="border-radius: 0"> -->
+                                <div class="card-body p-5 text-start">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <form>
+                                                    <div class="d-flex justify-content-between">
+                                                        <h1 class="text-center h1_font-weight ms-5">Задать
+                                                            вопрос</h1>
+                                                        <div class="col-md text-end align-items-end">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control rounded-0 input_bgr"
+                                                            placeholder="Имя">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="control-label required" for="username">Номер
+                                                            телефона</label>
+                                                        <input type="tel" name="username" required="required"
+                                                            class="form-control rounded-0 input_bgr"
+                                                            placeholder="Номер телефона">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="control-label required"
+                                                            for="username">E-mail</label>
+                                                        <input type="email" name="username" required="required"
+                                                            class="form-control rounded-0 input_bgr"
+                                                            placeholder="E-mail">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control rounded-0 input_bgr"
+                                                            placeholder="Интересующий товар/услуга">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="control-label required"
+                                                            for="username">Сообщение</label>
+                                                        <textarea class="form-control rounded-0 input_bgr"
+                                                            name="username" required="required"
+                                                            id="exampleFormControlTextarea1" rows="3"
+                                                            placeholder="Сообщение"  ></textarea>
+                                                    </div>
+                                                    <div class="mb-3 form-check">
+                                                        <input type="checkbox" class="form-check-input input_bgr">
+                                                        <label class="form-check-label"
+                                                            for="exampleCheck1">Отправляя
+                                                            заявку, Вы
+                                                            соглашаетесь
+                                                            с политикой
+                                                            конфиденциальности</label>
+                                                    </div>
+                                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                                        <button type="submit"
+                                                            class="btn btn-primary  btn-dark btn-lg rounded-0">Отправить</button>
+                                                    </div>
+                                                </form>
             </main>
 
             <!-- Footer -->
