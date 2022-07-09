@@ -1,21 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Cormorant+Upright:wght@300&family=Jost:wght@400;800&family=Lato:ital@1&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap');
 
-body 
-{
+body {
     font-family: 'Roboto';
     font-style: normal;
 }
 
-.project 
-{
+.project {
     display: flex;
     flex-direction: column;
 }
 
-.project__title
-{
-
-}
+.project__title {margin-bottom: 3%;}
 
 /* Заголовок */
 .title {
@@ -33,7 +28,7 @@ body
     color: #333333;
 }
 
-.project-content{
+.project-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,8 +49,7 @@ body
     width: 75%;
 }
 
-.project-content__img_table
-{
+.project-content__img_table {
     height: 50%;
     width: 50%;
     margin: 2%;
@@ -63,16 +57,17 @@ body
 
 .project-content__text {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 25px;
     margin: 2%;
 }
 
 
 /* Картинка с чертежами */
-.project__img_drawings{
+.project__img_drawings {
     width: 75%;
     margin: 2%;
+    margin-bottom:10%;
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -80,18 +75,21 @@ body
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+
     }
 
     .title {
-        font-size:3em;
+        font-size: 3em;
     }
 
-    .project-content__text_img{ display: none;}
+    .project-content__img_table {
+        display: none;
+
+    }
 }
 
 @media screen and (max-width:767px) {
-    .project{
+    .project {
         display: flex;
         flex-direction: column;
     }
@@ -100,9 +98,9 @@ body
         font-size: 1em;
     }
 
-.title{
-    font-size: 2em;
-}
+    .title {
+        font-size: 2em;
+    }
 
     .project-content__img_comp {
         width: 70%;
@@ -117,7 +115,7 @@ body
 
     }
 
-    .project-content__text{
+    .project-content__text {
         text-align: center;
 
     }
