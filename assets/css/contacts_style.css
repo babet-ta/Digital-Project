@@ -35,11 +35,11 @@ body {
     color: #333333;
 }
 
-.contacts-text__title{
+.contacts-text__title {
     margin-bottom: 4%;
 }
 
-.contacts-text__contact{
+.contacts-text__contact {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 0%;
@@ -63,7 +63,7 @@ body {
 .contacts-textmain__mail {
     font-size: 1.1em;
     margin-bottom: 6%;
-    margin-top:3%;
+    margin-top: 3%;
 }
 
 
@@ -91,8 +91,8 @@ body {
 /* Карта*/
 .item__map {
     width: 70vw;
-    
-   border:0;
+
+    border: 0;
 }
 
 
@@ -111,48 +111,48 @@ body {
 
 
 
-.item__map {
-    margin: auto;
-    height: 30vh;
-    width: 55vh;
-    margin-bottom: 20%;
-}
+    .item__map {
+        margin: auto;
+        height: 30vh;
+        width: 55vh;
+        margin-bottom: 20%;
+    }
 
-/* 1234 Sample Street Austin Texas 76401 */
-.contacts-text__sample {
-    font-size: 0, 7em;
-    margin-bottom: 1%;
+    /* 1234 Sample Street Austin Texas 76401 */
+    .contacts-text__sample {
+        font-size: 0, 7em;
+        margin-bottom: 1%;
 
-}
+    }
 
-/* 512.333.2222 */
-.contacts-text__coordinates {
-    margin-bottom: 2%;
-    font-size: 0, 7em;
-}
+    /* 512.333.2222 */
+    .contacts-text__coordinates {
+        margin-bottom: 2%;
+        font-size: 0, 7em;
+    }
 
-/* sampleemail@gmail.com */
-.contacts-text__mail {
-    font-size: 0, 7em;
-    margin-bottom: 1%;
+    /* sampleemail@gmail.com */
+    .contacts-text__mail {
+        font-size: 0, 7em;
+        margin-bottom: 1%;
 
 
-}
+    }
 
-.contacts-text__btn {
-    min-width: 150px;
-    height: 60px;
-    font-size: 0, 4em;
+    .contacts-text__btn {
+        min-width: 150px;
+        height: 60px;
+        font-size: 0, 4em;
 
-}
+    }
 
-.contacts-text__contact{
-    margin-bottom: 5%;
-}
+    .contacts-text__contact {
+        margin-bottom: 5%;
+    }
 
-.title_gray{
-    font-size: 2.8em;
-}
+    .title_gray {
+        font-size: 2.8em;
+    }
 }
 
 
@@ -163,20 +163,21 @@ body {
     }
 
 
-.contacts-text__btn {
-    min-width: 200px;
-    height: 80px;
-    font-size: 0, 4em;
+    .contacts-text__btn {
+        min-width: 200px;
+        height: 80px;
+        font-size: 0, 4em;
 
-}
+    }
 
-/* sampleemail@gmail.com */
-.contacts-text__mail {
-    font-size: 1.1em;
-    margin-bottom: 1%;
-}
-.contacts-text__sample {
-    
-    margin-bottom: 4%;
-}
+    /* sampleemail@gmail.com */
+    .contacts-text__mail {
+        font-size: 1.1em;
+        margin-bottom: 1%;
+    }
+
+    .contacts-text__sample {
+
+        margin-bottom: 4%;
+    }
 }
