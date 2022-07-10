@@ -8,17 +8,18 @@ body {
 /* Главный контейнер страницы "Контакты" */
 .contacts {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 8% 1fr 2fr;
+    grid-template-rows: 5% 2fr 1fr;
 }
 
 /* Контейнер для всего текста */
-.contacts-textmain {
+.contacts-text {
     grid-row: 2;
     grid-column: 2;
     display: flex;
     flex-direction: column;
     margin-left: 2%;
+    justify-content: space-between;
 }
 
 .title_gray {
@@ -34,24 +35,25 @@ body {
     color: #333333;
 }
 
-.contacts-textmain__title{
+.contacts-text__title {
+    margin-bottom: 4%;
+}
+
+.contacts-text__contact {
+    font-size: 1.2em;
+    font-weight: bold;
     margin-bottom: 0%;
 }
 
-.contacts-textmain__contact{
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
 /* 1234 Sample Street Austin Texas 76401 */
-.contacts-textmain__sample {
+.contacts-text__sample {
     font-size: 1.1em;
-    margin-top: 0%;
+    margin-top: -25px;
     margin-bottom: 4%;
 }
 
 /* 512.333.2222 */
-.contacts-textmain__coordinates {
+.contacts-text__coordinates {
     font-weight: bold;
     margin-bottom: 4%;
     font-size: 1.1em;
@@ -60,13 +62,14 @@ body {
 /* sampleemail@gmail.com */
 .contacts-textmain__mail {
     font-size: 1.1em;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
+    margin-top: 3%;
 }
 
 
 
 /* Contact US кнопка */
-.contacts-textmain__btn {
+.contacts-text__btn {
     min-width: 190px;
     height: 70px;
     background: #333333;
@@ -74,12 +77,12 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 0.9em;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 /* Контейнер для карты */
 .contacts-item {
-    grid-column: 3;
+    grid-column: 4;
     grid-row: 2;
     display: flex;
     justify-content: end;
@@ -87,9 +90,9 @@ body {
 
 /* Карта*/
 .item__map {
-    width: 45vw;
-    height: 46vh;
-    border:0;
+    width: 70vw;
+
+    border: 0;
 }
 
 
@@ -101,53 +104,80 @@ body {
     }
 
 
-    .contacts-textmain__btn {
+    .contacts-text__btn {
         margin-bottom: 10%;
         margin-top: 3%;
     }
 
+
+
+    .item__map {
+        margin: auto;
+        height: 30vh;
+        width: 55vh;
+        margin-bottom: 20%;
+    }
+
+    /* 1234 Sample Street Austin Texas 76401 */
+    .contacts-text__sample {
+        font-size: 0, 7em;
+        margin-bottom: 1%;
+
+    }
+
+    /* 512.333.2222 */
+    .contacts-text__coordinates {
+        margin-bottom: 2%;
+        font-size: 0, 7em;
+    }
+
+    /* sampleemail@gmail.com */
+    .contacts-text__mail {
+        font-size: 0, 7em;
+        margin-bottom: 1%;
+
+
+    }
+
+    .contacts-text__btn {
+        min-width: 150px;
+        height: 60px;
+        font-size: 0, 4em;
+
+    }
+
+    .contacts-text__contact {
+        margin-bottom: 5%;
+    }
+
+    .title_gray {
+        font-size: 2.8em;
+    }
 }
-
-.item__map {
-    margin: auto;
-    height: 30vh;
-    width: 50vh;
-}
-
-/* 1234 Sample Street Austin Texas 76401 */
-.contacts-textmain__sample {
-    font-size: 0, 7em;
-    margin-bottom: 1%;
-
-}
-
-/* 512.333.2222 */
-.contacts-textmain__coordinates {
-    margin-bottom: 2%;
-    font-size: 0, 7em;
-}
-
-/* sampleemail@gmail.com */
-.contacts-textmain__mail {
-    font-size: 0, 7em;
-    margin-bottom: 1%;
-
-
-}
-
-.contacts-textmain__btn {
-    min-width: 150px;
-    height: 60px;
-    font-size: 0, 4em;
-
-}
-
 
 
 @media screen and (min-width:1024px) {
     .item__map {
-        width: 45vw;
-        height: 46vh;
+        width: 60vw;
+        height: 60vh;
     }
 
+
+    .contacts-text__btn {
+        min-width: 200px;
+        height: 80px;
+        font-size: 0, 4em;
+
+    }
+
+    /* sampleemail@gmail.com */
+    .contacts-text__mail {
+        font-size: 1.1em;
+        margin-bottom: 1%;
+    }
+
+    .contacts-text__sample {
+
+        margin-bottom: 4%;
+    }
 }

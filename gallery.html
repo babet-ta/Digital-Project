@@ -10,241 +10,7 @@
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="/assets/css/gallery_style.css"> -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Cormorant+Upright:wght@300&family=Jost:wght@400;800&family=Lato:ital@1&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap');
-
-        /* Блок с фото */
-        .gallery-photos {
-            margin: 2% 12.5%;
-            display: grid;
-            grid-gap: 3%;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
-
-        /* Заголовок_светлый */
-        /* .gallery__title {
-            display: flex;
-            flex-direction: column;
-            margin-left: 12.5%;
-            font-family: "Roboto";
-            font-weight: 300;
-            color: #BDBDBD;
-        } */
-
-        /* Заголовок_темный */
-        /* .gallery__title_dark {
-            font-weight: 700;
-            color: #333333;
-        } */
-
-        /* Для заголовков */
-        .item__title {
-            display: flex;
-            flex-direction: column;
-            margin-left: 14%;
-            font-weight: 300;
-            color: #BDBDBD;
-            font-size: 4em;
-        }
-
-        .item__title_dark {
-            font-weight: 700;
-            color: #333333;
-        }
-
-        /* Полоса под заголовком центрирование */
-        .gallery__line {
-            text-align: center;
-        }
-
-        /* Полоса под заголовком картинка */
-        .gallery__line-img {
-            width: 75%;
-        }
-
-        /* Фотографии в галерее */
-        .gallery__img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Блок пагинации */
-        .pagination {
-            padding-bottom: 12%;
-            margin: 0 12.5%;
-            /* display: flex;
-            flex-direction: row; */
-        }
-
-        /* Позиционирование_блок пагинации */
-        .pagination__item {
-            margin: 0 0 5% 0;
-        }
-
-        /* Cтрелочки в пагинации */
-        .pagination__hand {
-            padding-top: 5%;
-            /* padding-left: 20%; */
-            display: flex;
-            flex-direction: row;
-        }
-
-        /* Счетчик слайдов/страниц */
-        .counter {
-            position: relative;
-        }
-
-        .counter span {
-            color: #BDBDBD;
-            font-family: 'Roboto';
-            font-size: 24px;
-            font-weight: 400;
-        }
-
-        .counter .counter__01 {
-            position: absolute;
-            width: 0;
-            word-break: break-all;
-            top: 15px;
-        }
-
-        .counter span.counter__slash {
-            position: absolute;
-            font-size: 50px;
-            left: 50px;
-            transform: rotate(20deg);
-        }
-
-        .counter .counter__02 {
-            position: absolute;
-            left: 100px;
-            top: 15px;
-        }
-
-        /* Размер стрелочек пагинации */
-        .item__photo {
-            max-width: 60%;
-        }
-
-        @media screen and (min-width: 1024px) {
-
-            .item__title {
-                font-size: 4em;
-            }
-
-            .pagination__hand {
-                padding-left: 20%;
-            }
-
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-
-            .item__title {
-                font-size: 3em;
-            }
-
-            .gallery-photos {
-                padding-bottom: 5%;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-            }
-
-            .gallery__img_1023 {
-                display: none;
-            }
-
-            .pagination__hand {
-                padding-left: 25%;
-            }
-
-            .footer {
-                font-size: 0.85em;
-            }
-
-            h6 {
-                font-size: 1.4em;
-            }
-
-            .footer-bottom {
-                padding-right: 12%;
-                font-size: 0.85em;
-            }
-        }
-
-        @media screen and (max-width: 767px) {
-
-            .item__title {
-                font-size: 2em;
-            }
-
-            .gallery-photos {
-                padding-bottom: 5%;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(3, 1fr);
-                grid-gap: 1%;
-            }
-
-            .gallery__img_767 {
-                display: none;
-            }
-
-            .pagination {
-                padding-top: 6%;
-            }
-
-            .counter {
-                width: 50%;
-            }
-
-            .pagination__hand {
-                padding-left: 20%;
-            }
-
-            .footer {
-                font-size: 0.7em;
-            }
-
-            h6 {
-                font-size: 1.1em;
-            }
-
-            .footer-bottom {
-                font-size: 0.7em;
-            }
-
-        }
-
-        /* Футер */
-        .footer {
-            padding: 0 10% 0 10%;
-            font-family: Roboto;
-        }
-
-        /* Футер отступ сверху */
-        .footer-rows {
-            padding-top: 1.5%;
-        }
-
-        /* Цвет ссылок в футере */
-        .footer-information__link {
-            color: white;
-        }
-
-        /* Шрифт нижней части футера */
-        .footer-bottom {
-            color: #C8C8C8;
-            font-family: Open Sans;
-        }
-
-        /*Отступ в адресе*/
-        .texas {
-            margin-left: 15%;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/gallery_style.css">
 </head>
 
 <body>
@@ -254,7 +20,7 @@
     </header>
     <main>
         <div class="gallery">
-            <h1 class="item__title">Photo <span class="item__title_dark">Gallery</span></h1>
+            <h1 class="title_gray">Photo <span class="title_dark">Gallery</span></h1>
             <div class="gallery__line"><img src="/assets/images/gallery/gallery_line.png" alt="gallery_line"
                     class="gallery__line-img"> </div>
             <div class="gallery-photos">
@@ -275,24 +41,21 @@
                 <div><img src="/assets/images/gallery/gallery_img_10.png" alt="img_10"
                         class="gallery__img gallery__img_1023 gallery__img_767"></div>
             </div>
-            <div class="pagination">
-                <!-- <div class="pagination__item"><img src="/assets/images/gallery/slide-numbers.png" alt="slide-numbers"
-                        class="item__photo">
-                </div> -->
-                <!-- <div class="pagination__item"><a href=""><img src="/assets/images/gallery/slide_left.png"
-                            alt="slide_left" class="item__photo"></a></div>
-                <div class="pagination__item"><a href=""><img src="/assets/images/gallery/slide_right.png"
-                            alt="slide_right" class="item__photo"></a></div> -->
+            <div class="pagination-section">
                 <div class="counter">
                     <span class="counter__01">01</span>
                     <span class="counter__slash">/</span>
-                    <span class="counter__02">02</span>
+                    <span class="counter__05">05</span>
                 </div>
-                <div class="pagination__hand">
-                    <div class="pagination__item"><a href=""><img src="/assets/images/gallery/slide_left.png"
-                                alt="slide_left" class="item__photo"></a></div>
-                    <div class="pagination__item"><a href=""><img src="/assets/images/gallery/slide_right.png"
-                                alt="slide_right" class="item__photo"></a></div>
+                <div class="pagination__items">
+                    <ul>
+                        <a class="is-active" href="#">
+                            <li>⟵</li>
+                        </a>
+                        <a href="#">
+                            <li>⟶</li>
+                        </a>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -311,7 +74,7 @@
                     <!-- Grid column -->
                     <div class=" col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 class="fw-bold mb-4">
+                        <h6 class="fw-bold mb-4 footer__title">
                             Information
                         </h6>
                         <p>
@@ -336,7 +99,7 @@
                         class="col-md-4 col-lg-4 col-xl-3 mb-4 d-flex flex-column align-items-between justify-content-between ">
                         <!-- Links -->
                         <div>
-                            <h6 class="fw-bold mb-4">
+                            <h6 class="fw-bold mb-4 footer__title">
                                 Contacts
                             </h6>
                             <i class="fa-regular fa-location-dot "></i> <span class="m-3">1234 Sample Street</span>
@@ -354,7 +117,7 @@
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
-                        <h6 class="fw-bold mb-4">
+                        <h6 class="fw-bold mb-4 footer_title">
                             Social Media
                         </h6>
                         <div class="flex justify-content-around ">

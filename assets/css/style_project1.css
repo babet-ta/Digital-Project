@@ -1,24 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Cormorant+Upright:wght@300&family=Jost:wght@400;800&family=Lato:ital@1&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap');
 
-body 
-{
+body {
     font-family: 'Roboto';
     font-style: normal;
 }
 
-.project_example-main_content 
-{
+.project {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
-.project_example 
-{
-    display: flex;
-    flex-direction: column;
-}
+.project__title {margin-bottom: 3%;}
 
 /* Заголовок */
 .title {
@@ -36,13 +28,20 @@ body
     color: #333333;
 }
 
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* Картинка с компьютерами */
-.main_content__img_comp {
+.project-content__img_comp {
     width: 72%;
 }
 
 /* Картинка со столом,рядом текст */
-.main_content-text_img {
+.project-content__text_img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,89 +49,74 @@ body
     width: 75%;
 }
 
-.text_img__img_table {
+.project-content__img_table {
     height: 50%;
     width: 50%;
     margin: 2%;
 }
 
-.text_img__text {
+.project-content__text {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 25px;
     margin: 2%;
 }
 
+
 /* Картинка с чертежами */
-.project_example__img_drawings {
+.project__img_drawings {
     width: 75%;
     margin: 2%;
+    margin-bottom:10%;
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
-    .project_example {
+    .project {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+
     }
 
-    .project_example__item {
-        font-size:3em;
+    .title {
+        font-size: 3em;
     }
 
-    .project_example_item {}
+    .project-content__img_table {
+        display: none;
 
-    .project {}
-
-    .project_example-main_content {}
-
-    .main_content__img_comp {}
-
-    .main_content-text_img {}
-
-    .text_img__img_table { display: none;}
-
-    .text_img__text {}
-
-    .project_example__img_drawings {}
-
+    }
 }
 
 @media screen and (max-width:767px) {
-    .project_example {
+    .project {
         display: flex;
         flex-direction: column;
-
     }
 
-    .project_example__item {
+    .project__item {
         font-size: 1em;
     }
 
-    .project_example_item {}
+    .title {
+        font-size: 2em;
+    }
 
-    .project {}
-
-    .project_example-main_content {}
-
-    .main_content__img_comp {
+    .project-content__img_comp {
         width: 70%;
     }
 
-    .main_content-text_img {
+    .project-content__text_img {
         width: 100%;
     }
 
-    .text_img__img_table {
+    .project-content__img_table {
         display: none;
 
     }
 
-    .text_img__text {
+    .project-content__text {
         text-align: center;
 
     }
-
-    .project_example__img_drawings {}
 }
