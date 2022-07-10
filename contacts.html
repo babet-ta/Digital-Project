@@ -139,99 +139,96 @@
                     <p class="contacts-text__sample ">1234 Sample Street Austin Texas 76401 </p>
                     <p class="contacts-text__coordinates">512.333.2222</p>
                     <p class="contacts-text__mail">sampleemail@gmail.com</p>
-                    <form class="contacts-textmain__form">
-                        <button type="button" class="contacts-text__btn" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            CONTACT US
-                        </button>
+                    <form class="needs-validation" novalidate>
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="text-center h1_font-weight ms-5">Задать
+                                            вопрос</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Закрыть"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control rounded-0 input_bgr"
+                                                placeholder="Имя">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="control-label required" for="username">Номер
+                                                телефона</label>
+                                            <input type="tel" name="username" required="required"
+                                                class="form-control rounded-0 input_bgr" placeholder="Номер телефона">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="control-label required" for="username">E-mail</label>
+                                            <input type="email" name="username" required="required"
+                                                class="form-control rounded-0 input_bgr" placeholder="E-mail">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" required class="form-control rounded-0 input_bgr"
+                                                placeholder="Интересующий товар/услуга">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="control-label required" for="username">Сообщение</label>
+                                            <textarea class="form-control rounded-0 input_bgr" name="username"
+                                                required="required" id="exampleFormControlTextarea1" rows="3"
+                                                placeholder="Сообщение"></textarea>
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input input_bgr">
+                                            <label class="form-check-label" for="exampleCheck1">Отправляя
+                                                заявку, Вы
+                                                соглашаетесь
+                                                с политикой
+                                                конфиденциальности</label>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button class="btn btn-primary btn-dark btn-lg rounded-0"
+                                                data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                                                type="submit">Отправить</button>
+                                            <button class="btn btn-dark btn-lg rounded-0" type="submit">Отправить
+                                                форму</button>
+                                        </div>
+                                    </div>
+                    </form>
                 </div>
                 </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="d-flex justify-content-center">
+                                <img src="/assets/images/gallery/success.png" alt="">
+                            </div>
+                            <div class="mb-3">
+                                <h1 class="text-center h1_font-weight">Спасибо!</h1>
+                            </div>
+                            <div class="mb-3">
+                                <p class="text-center h1_font-weight">Ваше сообщение отправлено мы
+                                    свяжемся с вами в ближайшее время</p>
+                            </div>
+                            <div class="d-grid gap-2 col-12 mx-auto">
+                                <button type="submit" class="btn btn-primary  btn-dark btn-lg rounded-0"
+                                    data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Вернуться
+                                    назад</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-dark btn-lg rounded-0" data-bs-toggle="modal" href="#exampleModalToggle"
+                    role="button">CONTACT
+                    US</a>
+                </div>
+
                 <div class="contacts-item">
                     <iframe class="item__map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.841382541047!2d-97.75079788448016!3d30.27010031483124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b50c3ad151db%3A0xd141f5addf7f3f47!2zNjE1IFcgN3RoIFN0LCBBdXN0aW4sIFRYIDc4NzAxLCDQodCo0JA!5e0!3m2!1sru!2sru!4v1656932389260!5m2!1sru!2sru"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <!-- Модальное окно -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content" style="border-radius: 0">
-                                <!-- <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Заголовок модального окна</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-            </div> -->
-                                <div class="modal-body">
-                                    <!-- <section class="vh-100" style="background-color: #8d9095;"> -->
-                                    <div class="container py-5 h-100">
-                                        <div class="row d-flex justify-content-center align-items-center h-100">
-                                            <!-- <div class="col-12 col-md-12 col-lg-12 col-xl-12"> -->
-                                            <!-- <div class="card shadow-2-strong" style="border-radius: 0"> -->
-                                            <div class="card-body p-5 text-start">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <form>
-                                                                <div class="d-flex justify-content-between">
-                                                                    <h1 class="text-center h1_font-weight ms-5">Задать
-                                                                        вопрос</h1>
-                                                                    <div class="col-md text-end align-items-end">
-                                                                        <button type="button" class="btn-close"
-                                                                            data-bs-dismiss="modal"
-                                                                            aria-label="Close"></button>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <input type="text"
-                                                                        class="form-control rounded-0 input_bgr"
-                                                                        placeholder="Имя">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <label class="control-label required"
-                                                                        for="username">Номер
-                                                                        телефона</label>
-                                                                    <input type="tel" name="username"
-                                                                        required="required"
-                                                                        class="form-control rounded-0 input_bgr"
-                                                                        placeholder="Номер телефона">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <label class="control-label required"
-                                                                        for="username">E-mail</label>
-                                                                    <input type="email" name="username"
-                                                                        required="required"
-                                                                        class="form-control rounded-0 input_bgr"
-                                                                        placeholder="E-mail">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <input type="text"
-                                                                        class="form-control rounded-0 input_bgr"
-                                                                        placeholder="Интересующий товар/услуга">
-                                                                </div>
-                                                                <div class="mb-3">
-                                                                    <label class="control-label required"
-                                                                        for="username">Сообщение</label>
-                                                                    <textarea class="form-control rounded-0 input_bgr"
-                                                                        name="username" required="required"
-                                                                        id="exampleFormControlTextarea1" rows="3"
-                                                                        placeholder="Сообщение"></textarea>
-                                                                </div>
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox"
-                                                                        class="form-check-input input_bgr"
-                                                                        required="required">
-                                                                    <label class="form-check-label required"
-                                                                        for="exampleCheck1">Отправляя
-                                                                        заявку, Вы
-                                                                        соглашаетесь
-                                                                        с политикой
-                                                                        конфиденциальности</label>
-                                                                </div>
-                                                                <div class="d-grid gap-2 col-12 mx-auto">
-                                                                    <button type="submit"
-                                                                        class="btn btn-primary  btn-dark btn-lg rounded-0">Отправить</button>
-                                                                </div>
-                                                            </form>
+                </div>
             </main>
-
             <!-- Footer -->
             <footer class="footer text-center text-lg-start bg-dark text-light ">
                 <div class="d-flex justify-content-around">
@@ -316,8 +313,32 @@
                 <div class="text-center p-4">
                     <p class="footer-bottom">© 2021 All Rights Reserved.</p>
                 </div>
-            </footer>
+
+
+<!--  -->
+
+            <!--  -->
             <!-- Footer -->
+            <script>
+                // Пример стартового JavaScript для отключения отправки форм при наличии недопустимых полей
+                (function () {
+                    'use strict';
+                    window.addEventListener('load', function () {
+                        // Получите все формы, к которым мы хотим применить пользовательские стили проверки Bootstrap
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Зацикливайтесь на них и предотвращайте подчинение
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
                 crossorigin="anonymous">
