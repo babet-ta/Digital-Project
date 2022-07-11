@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
 main {
     margin: 0 10vw;
     font-family: 'Roboto';
 }
 
 .main__button {
+    display: block;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    border: 0;
+    text-decoration: none;
     width: 222px;
     height: 71px;
+    padding: 25px;
 }
+
 .main_light-button {
     color: #333333;
     background-color: #fff;
@@ -24,10 +29,14 @@ main {
 
 .banner {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.banner_left-side {
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 85vh;
+    justify-content: end;
 }
 
 .banner__first {
@@ -47,11 +56,20 @@ main {
     left: 0;
 }
 
+.banner__arrows {
+    margin: 90px 0 90px 0;
+}
+
 .banner__arrows button {
     background-color: #fff;
     border: 1px solid #f2f2f2;
     min-width: 53px;
     min-height: 53px;
+    margin-right: 23px;
+}
+
+.banner__arrows button:hover {
+    background-color: #F9F9F9;
 }
 
 .about {
@@ -59,6 +77,8 @@ main {
     grid-template-columns: 60% 40%;
     font-weight: 300;
     background-color: #FBFBFB;
+    padding: 30px 100px;
+    margin-bottom: 120px;
 }
 
 .about__pictures {
@@ -74,6 +94,18 @@ main {
 .about__pictures img:nth-child(2) {
     grid-row: 1/3;
     margin-top: 60px;
+}
+
+.about__article article {
+    margin-bottom: 20px;
+}
+
+.about__article {
+    padding: 30px 0 0 30px;
+}
+
+.main-focus {
+    margin-bottom: 120px;
 }
 
 .main-focus__content {
@@ -102,6 +134,14 @@ main {
     line-height: 36px;
     word-wrap: break-word;
     font-size: 22px;
+}
+
+.our-projects {
+    margin-bottom: 120px;
+}
+
+.our-projects__title {
+    margin-bottom: 60px;
 }
 
 .our-projects_pictures {
@@ -136,6 +176,10 @@ main {
     grid-column: 2/4;
 }
 
+.our-projects_button {
+margin-top: 30px;
+}
+
 .our-projects_link {
     position: absolute;
     text-decoration: none;
@@ -147,7 +191,7 @@ main {
     background-color: #333333;
     opacity: 0.8;
     box-sizing: border-box;
-    padding: 48px 0 0 79px;
+    padding: 20px 0 0 79px;
 }
 
 .link_title {
@@ -157,8 +201,113 @@ main {
     margin: 0;
 }
 
+.link_button {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 12px;
+}
+
 .contacts__title {
     margin-bottom: 15px;
+}
+
+@media screen and (max-width:1439px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about__article {
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width:767px) {
+    main{
+        margin: 5px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+
+    .banner__first {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .banner__first_image {
+        min-width: 100%;
+        min-height: 50vh;
+        object-fit: cover;
+    }
+
+    .banner__arrows {
+        margin: 10px 0 10px 0;
+    }
+
+    .counter {
+        margin: 0;
+    }
+
+    .counter span {
+        font-size: 1em;
+    }
+
+    .counter span.counter__slash {
+        font-size: 2.5em;
+    }
+
+    .about {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .about__pictures {
+        grid-template-columns: 1fr;
+    }
+
+    .about__pictures img:nth-child(1) {
+        grid-row: 1;
+    }
+
+    .about__pictures img:nth-child(2) {
+        grid-row: 2;
+        margin: 0;
+    }
+
+    .about__pictures img:nth-child(3) {
+        grid-row: 3;
+    }
+
+    .main-focus {
+        margin-bottom: 0;
+    }
+
+    .main-focus__content {
+        grid-template-columns: 1fr;
+    }
+
+    .our-projects {
+        margin-bottom: 5vh;
+    }
+
+    .our-projects_pictures {
+        grid-gap: 10px;
+    }
+    
+    .our-projects_pictures .our-projects_image>img {
+        height: 25vh;
+    }
+
+    .our-projects_link {
+        padding: 0;
+    }
+
 }
 
 .form-control {

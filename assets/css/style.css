@@ -19,6 +19,9 @@
 /* Счетчик слайдов/страниц */
 .counter {
     position: relative;
+    height: 52px;
+    width: 142px;
+    margin-bottom: 30px;
 }
 .counter span {
     color: #BDBDBD;
@@ -42,4 +45,88 @@
     position: absolute;
     left: 100px;
     top: 15px;
+}
+
+.header__logo {
+    height: 8vh;
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: -20px;
+}
+
+.header {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 2fr 3fr;
+}
+
+.header-nav {
+    align-items: center;
+    grid-column: 7/11;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav__item {
+
+    margin-right: 10%;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+}
+
+.nav__item:hover {
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.nav__item:active {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width:1023px) {
+    .header {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .header__logo {
+        height: 6vh;
+    }
+
+    .header-nav {
+        grid-column: 4;
+    }
+
+    .nav__item {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .header__logo {
+
+        justify-self: center;
+        grid-column: 1;
+        width: 7vw;
+        height: 7vh;
+    }
+
+    .header-nav {
+        grid-column: 2;
+    }
+
+    .nav__item {
+        margin-right: 4%;
+        font-size: 0.6em;
+    }
 }
