@@ -266,6 +266,7 @@ font-size: 0.85em;
         margin-right: 4%;
         font-size: 0.6em;
     }
+<<<<<<< HEAD
 
     .title_gray {
         font-size: 2em;
@@ -298,4 +299,37 @@ font-size: 0.85em;
         font-size: 0.7em;
         }
 }
+=======
+>>>>>>> b99eb74796770d113c6b2825ed80f6f718378dea
 
+    .title_gray {
+        font-size: 2em;
+        }
+        
+        .gallery-photos {
+        padding-bottom: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1%;
+        }
+        
+        .gallery__img_767 {
+        display: none;
+        }
+        
+        .pagination-section {
+            padding-top: 5%;
+        }
+        
+        .footer {
+        font-size: 0.7em;
+        }
+        
+        .footer__title {
+        font-size: 1.1em;
+        }
+        
+        .footer-bottom {
+        font-size: 0.7em;
+        }
+}
