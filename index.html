@@ -8,18 +8,277 @@
     <title>Digital Project</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        .contacts__title {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            background-color: #F3F3F3;
+            border: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.04em;
+            color: #8D8D8D;
+        }
+
+        .btn {
+            background-color: #333333;
+            border: none;
+            padding: 3% 5%;
+            padding-right: 10%;
+            font-weight: 400;
+            font-size: 0.7em;
+            line-height: 100%;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            position: relative;
+        }
+
+        .btn:hover {
+            background-color: #333333;
+            border: none;
+        }
+
+        .btn__text::after {
+            content: "";
+            max-width: 24px;
+            max-height: 24px;
+            width: 100%;
+            height: 100%;
+            background-image: url("assets/images/banners/arrow.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: absolute;
+            left: 70%;
+            top: 28%;
+        }
+    </style>
 </head>
-<header>
-Test
-</header>
-<main>
-
-</main>
-<footer>
-
-</footer>
 
 <body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="assets/images/logo/logo-nav.svg" alt="Логотип">
+            <nav class="header-nav">
+                <a href="index.html" class="nav__item">MAIN</a>
+                <a href="gallery.html" class="nav__item">GALLERY</a>
+                <a href="projects.html" class="nav__item">PROJECTS</a>
+                <a href="certifications.html" class="nav__item">CERTIFICATIONS</a>
+                <a href="contacts.html" class="nav__item">CONTACTS</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="banner_left-side">
+                <h1 class="title_gray">PROJECT<span class="title_dark">Lorum</span></h1>
+                <div class="banner__arrows">
+                    <button> <img src="/assets/images/icons/left-arrow.svg"> </button>
+                    <button> <img src="/assets/images/icons/right-arrow.svg"> </button>
+                </div>
+                <div class="counter">
+                    <span class="counter__01">01</span>
+                    <span class="counter__slash">/</span>
+                    <span class="counter__02">02</span>
+                </div>
+            </div>
+            <div class="banner__first">
+                <img src="/assets/images/banners/banner_project.jpg" alt="building" class="banner__first_image">
+                <a class="main_light-button main__button banner_button" href="/project-example.html">Veiew
+                    Project <img src="/assets/images/icons/right-arrow.svg"> </a>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about__pictures">
+                <img src="/assets/images/about/building_1.jpg" alt="modern building">
+                <img src="/assets/images/about/building_3.jpg" alt="another modern building">
+                <img src="/assets/images/about/building_2.jpg" alt="black&white building">
+            </div>
+            <div class="about__article">
+                <h2 class="title_gray">About</h2>
+                <article>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the leap into electronic typesetting, remaining essentially unchanged.</article>
+                <a class="main__button main_light-button" href="/#">Read More <img
+                        src="/assets/images/icons/right-arrow.svg"></a>
+            </div>
+        </div>
+        <div class="main-focus">
+            <h2 class="main-focus__title title_gray">Main Focus/Mission Statement</h2>
+            <div class="main-focus__content">
+                <div class="main-focus__paragraph">
+                    <p class="main-focus__number">1</p>
+                    <p class="main-focus__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
+                        perspiciatis
+                        asperiores sint aperiam doloremque commodi ullam possimus.</p>
+                </div>
+                <div class="main-focus__paragraph">
+                    <p class="main-focus__number">2</p>
+                    <p class="main-focus__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur,
+                        lectus et facilisis placerat, magna mauris porttitor tortor, a auctor est felis ut nisl.</p>
+                </div>
+            </div>
+        </div>
+        <div class="our-projects">
+            <h2 class="our-projects__title title_gray">Our Projects</h2>
+            <div class="our-projects_pictures">
+                <div class="our-projects_image">
+                    <img src="/assets/images/projects/main_our_projects/image_1.jpg" alt="modern building">
+                    <a class="our-projects_link" href="/project-example.html">
+                        <p class="link_title">Sample Project</p>
+                        <p class="link_button">View More <img src="/assets/images/icons/right-arrow-light.svg"
+                                alt="right arrow"></p>
+                    </a>
+                </div>
+                <div class="our-projects_image">
+                    <img src="/assets/images/projects/main_our_projects/image_2.jpg" alt="">
+                </div>
+                <div class="our-projects_image">
+                    <img src="/assets/images/projects/main_our_projects/image_3.jpg" alt="">
+                </div>
+                <div class="our-projects_image"> <img src="/assets/images/projects/main_our_projects/image_4.jpg"
+                        alt="">
+                </div>
+                <div class="our-projects_image"><img src="/assets/images/projects/main_our_projects/image_5.jpg" alt="">
+                </div>
+            </div>
+            <a class="main__button main_dark-button our-projects_button" href="/projects.html">All Projects <img
+                    src="/assets/images/icons/right-arrow-light.svg" alt="right arrow"></a>
+        </div>
+
+        <div class="container-fluid contacts">
+            <div class="row contacts__inner">
+                <div class="col-12 contacts__col">
+                    <h2 class="contacts__title title_gray">Contact Us</h2>
+                </div>
+            </div>
+            <div class="row  contacts__inner">
+                <div class="col-md-12 col-lg-6 col-lx-6 contacts__form">
+                    <form>
+                        <fieldset>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="disabledTextInput" class="form-control"
+                                    placeholder="Phone Number">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="disabledTextInput" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="disabledTextInput" class="form-control"
+                                    placeholder="Interested in">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary rounded-0"><span class="btn__text">SEND
+                                    EMAIL</span></button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-md-12 col-lg-6 col-lx-6 contacts__img">
+                    <img src="assets/images/banners/man.png" class="img-fluid" alt="man">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer text-center text-lg-start bg-dark text-light">
+        <div class="d-flex justify-content-around">
+            <div class="container-fluid text-center text-md-start mt-5 m-auto">
+                <!-- Grid row -->
+                <div class="footer-rows row mt-5">
+                    <!-- Grid column -->
+                    <div class="d-flex justify-content-center col-md-4 col-lg-3 col-xl-3 mb-4">
+                        <!-- Content logo -->
+                        <a href=""><img src="/assets/images/logo/logo_footer.png" alt="footer-logo"></a>
+                    </div>​
+                    <!-- Grid column -->
+                    <div class=" col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="fw-bold mb-4 footer__title">
+                            Information
+                        </h6>
+                        <p>
+                            <a href="index.html" class="text-decoration-none footer-information__link">Main</a>
+                        </p>
+                        <p>
+                            <a href="gallery.html" class="text-decoration-none footer-information__link">Gallery</a>
+                        </p>
+                        <p>
+                            <a href="project-example.html"
+                                class="text-decoration-none footer-information__link">Projects</a>
+                        </p>
+                        <p>
+                            <a href="certifications.html"
+                                class="text-decoration-none footer-information__link">Certifications</a>
+                        </p>
+                        <p>
+                            <a href="contacts.html" class="text-decoration-none footer-information__link">Contacts</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->​
+                    <!-- Grid column -->
+                    <div
+                        class="col-md-4 col-lg-4 col-xl-3 mb-4 d-flex flex-column align-items-between justify-content-between ">
+                        <!-- Links -->
+                        <div>
+                            <h6 class="fw-bold mb-4 footer__title">
+                                Contacts
+                            </h6>
+                            <i class="fa-regular fa-location-dot "></i> <span class="m-3">1234 Sample Street</span>
+                            <p class="texas ">Austin Texas 78681</p>
+                        </div>
+                        <div>
+                            <p><i class="fas fa-phone me-3 mb-4 "></i> 512.333.2222</p>
+                            <p>
+                                <i class=" fas fa-envelope me-3 "></i>
+                                sampleemail@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Grid column -->​
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="fw-bold mb-4 footer_title">
+                            Social Media
+                        </h6>
+                        <div class="flex justify-content-around ">
+                            <a href="" class="me-4 text-reset social">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset social">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset social">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset social">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+        </div>
+        <div class="text-center p-4">
+            <p class="footer-bottom">© 2021 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer -->
 
 </body>
 
