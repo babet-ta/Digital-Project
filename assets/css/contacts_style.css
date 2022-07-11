@@ -70,14 +70,23 @@ body {
 
 /* Contact US кнопка */
 .contacts-text__btn {
-    min-width: 190px;
-    height: 70px;
+    height: 10vh;
+    width: 25vh;
     background: #333333;
+    padding: 2rem 3rem;
     color: white;
     text-transform: uppercase;
     cursor: pointer;
     font-size: 0.9em;
+    text-decoration: none;
     margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-text__btn:hover {
+    color: white;
 }
 
 /* Контейнер для карты */
@@ -107,6 +116,7 @@ body {
     .contacts-text__btn {
         margin-bottom: 10%;
         margin-top: 3%;
+        align-self: center;
     }
 
 
@@ -156,7 +166,7 @@ body {
 }
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1023px) {
     .item__map {
         width: 60vw;
         height: 60vh;
@@ -176,8 +186,4 @@ body {
         margin-bottom: 1%;
     }
 
-    .contacts-text__sample {
-
-        margin-bottom: 4%;
-    }
 }
