@@ -130,3 +130,8 @@
         font-size: 0.6em;
     }
 }
+
+/* Цвет ссылок в футере */
+.footer-information__link {
+    color: white;
+}
