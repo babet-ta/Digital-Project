@@ -135,3 +135,14 @@
 .footer-information__link {
     color: white;
 }
+
+        /* Форма */
+        label.required:after {
+            color: red;
+            content: " *";
+        }
+
+        .input_bgr {
+            background-color: #F3F3F3;
+        }
+
