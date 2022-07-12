@@ -1,4 +1,4 @@
-# Website for architectural company
+# Website for an architectural company
 
 It is a website template for an architectural company.  
 
