@@ -8,7 +8,7 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/gallery_style.css">
+    <link rel="stylesheet" href="assets/css/gallery_style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -17,7 +17,7 @@
 
     <header>
         <div class="header">
-            <a href="index.html"><img class="header__logo" src="assets/images/logo/logo-nav.svg" alt="Логотип"></a>
+            <img class="header__logo" src="assets/images/logo/logo-nav.svg" alt="Логотип">
             <nav class="header-nav">
                 <a href="index.html" class="nav__item">MAIN</a>
                 <a href="gallery.html" class="nav__item">GALLERY</a>
@@ -78,7 +78,8 @@
                     <!-- Grid column -->
                     <div class="d-flex justify-content-center col-md-4 col-lg-3 col-xl-3 mb-4">
                         <!-- Content logo -->
-                        <a href=""><img src="assets/images/logo/logo_footer.png" alt="footer-logo"></a>
+                        <a href="index.html"><img src="assets/images/logo/logo_footer.png" alt="footer-logo"
+                                class="footer__logo"></a>
                     </div>​
                     <!-- Grid column -->
                     <div class=" col-md-4 col-lg-2 col-xl-3 mx-auto mb-4">
@@ -118,9 +119,9 @@
                         </div>
                         <div>
                             <p><i class="fas fa-phone me-3 mb-4 "></i> 512.333.2222</p>
-                            <p>
-                                <i class=" fas fa-envelope me-3 "></i>
-                                sampleemail@gmail.com
+                            <p><a href="mailto:sampleemail@gmail.com">
+                                    <i class=" fas fa-envelope me-3 "></i>
+                                    sampleemail@gmail.com</a>
                             </p>
                         </div>
                     </div>
