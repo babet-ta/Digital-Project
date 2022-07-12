@@ -308,6 +308,11 @@ margin-top: 30px;
         padding: 0;
     }
 
+    .main-focus__title
+    {
+        font-size: 2.8em;
+    }
+
 }
 
 .form-control {
