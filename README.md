@@ -18,4 +18,4 @@ See the list of [contributors](https://github.com/yourworthlesslife/Digital-Proj
 
 ## Result
 
-You can check this template [here](https://yourworthlesslife.github.io/Digital-Project/) 
+You can check this template [here](https://yourworthlesslife.github.io/Digital-Project/). 
