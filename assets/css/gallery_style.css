@@ -1,9 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Cormorant+Upright:wght@300&family=Jost:wght@400;800&family=Lato:ital@1&family=Playfair+Display:ital,wght@0,400;0,800;1,400&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap');
 
-
-/* Блок с фото */
-
+ /* <!-- НАВИГАЦИЯ --> */
 .header__logo {
     height: 8vh;
     -ms-grid-column: 2;
@@ -215,12 +219,13 @@
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-around;
+            justify-content: space-between;
 
 }
 
 .nav__item {
-    margin-right: 5%;
+
+    margin-right: 10%;
     text-decoration: none;
     color: black;
     font-size: 0.9em;
@@ -238,6 +243,7 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+
 
 /* Блок с фото */
 .gallery-photos {
@@ -326,7 +332,7 @@
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
 }
 
 .pagination-section {
@@ -419,6 +425,10 @@
 .footer {
     padding: 0 10% 0 10%;
     font-family: Roboto;
+}
+
+.footer__logo {
+    height: 12vh;
 }
 
 /* Футер отступ сверху */
@@ -517,6 +527,10 @@ display: none;
 font-size: 0.85em;
 }
 
+.footer__logo {
+height: 10vh;
+}
+
 .footer__title {
 font-size: 1.4em;
 }
@@ -548,82 +562,84 @@ font-size: 0.85em;
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width:767px) {
+    .header {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
 
-.title_gray {
-font-size: 2em;
-}
+    .header__logo {
 
-.gallery-photos {
-padding-bottom: 5%;
--ms-grid-columns: 1fr;
-grid-template-columns: 1fr;
--ms-grid-rows: 1fr 1% 1fr 1% 1fr;
-grid-template-rows: repeat(3, 1fr);
-grid-gap: 1%;
-}
+        -ms-grid-column-align: center;
 
-.gallery-photos > *:nth-child(1) {
+            justify-self: center;
+        -ms-grid-column: 1;
+        grid-column: 1;
+        width: 7vw;
+        height: 7vh;
+    }
+
+    .header-nav {
+        -ms-grid-column: 2;
+        grid-column: 2;
+    }
+
+    .nav__item {
+        margin-right: 4%;
+        font-size: 0.6em;
+    }
+
+    .title_gray {
+        font-size: 2em;
+        }
+        
+        .gallery-photos {
+        padding-bottom: 5%;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: 1fr 1% 1fr 1% 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1%;
+        }
+        
+        .gallery-photos > *:nth-child(1) {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
-}
-
-.gallery-photos > *:nth-child(2) {
+        }
+        
+        .gallery-photos > *:nth-child(2) {
         -ms-grid-row: 3;
         -ms-grid-column: 1;
-}
-
-.gallery-photos > *:nth-child(3) {
+        }
+        
+        .gallery-photos > *:nth-child(3) {
         -ms-grid-row: 5;
         -ms-grid-column: 1;
-}
+        }
+        
+        .gallery__img_767 {
+        display: none;
+        }
+        
+        .pagination-section {
+            padding-top: 5%;
+        }
+        
+        .footer {
+        font-size: 0.7em;
+        }
 
-.gallery__img_767 {
-display: none;
-}
-
-.pagination-section {
-    padding-top: 5%;
-}
-
-.footer {
-font-size: 0.7em;
-}
-
-.footer__title {
-font-size: 1.1em;
-}
-
-.footer-bottom {
-font-size: 0.7em;
-}
-
-.header {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 2fr 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-.header__logo {
-
-    -ms-grid-column-align: center;
-
-        justify-self: center;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    width: 7vw;
-    height: 7vh;
-}
-
-.header-nav {
-    -ms-grid-column: 2;
-    grid-column: 2;
-}
-
-.nav__item {
-    margin-right: 4%;
-    font-size: 0.6em;
-}
-
+        .footer__logo {
+        height: 8vh;
+            }
+        
+        .footer__title {
+        font-size: 1.1em;
+        }
+        
+        .footer-bottom {
+        font-size: 0.7em;
+        }
 }
