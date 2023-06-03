@@ -14,8 +14,8 @@ These instructions will get you a copy of the project up and running on your hos
 
 ## Authors
 
-See the list of [contributors](https://github.com/yourworthlesslife/Digital-Project/graphs/contributors) who participated in this project.
+See the list of [contributors](https://github.com/babet-ta/Digital-Project/graphs/contributors) who participated in this project.
 
 ## Result
 
-You can check this template [here](https://yourworthlesslife.github.io/Digital-Project/). 
+You can check this template [here](https://babet-ta.github.io/Digital-Project/). 
