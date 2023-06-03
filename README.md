@@ -1,6 +1,6 @@
 # Website for an architectural company
 
-It is a website template for an architectural company.  
+This is a website template for an architectural company.  
 
 ## Getting Started
 
